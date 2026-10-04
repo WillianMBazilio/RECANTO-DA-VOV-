@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recanto da Vovó | Restaurante e pesqueiro em São José do Rio Pardo - SP</title>
+<meta name="description" content="Comida caseira no fogão a lenha, natureza e música ao vivo em São José do Rio Pardo - SP. Veja o cardápio, horários e como chegar ao Recanto da Vovó.">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Recanto da Vovó">
+<meta property="og:description" content="Você não visita o Recanto. Você desacelera nele.">
+<meta property="og:image" content="assets/foto-de-fundo.jpg">
+<meta name="theme-color" content="#3b2a1e">
+<link rel="stylesheet" href="style.css">
+
+<!-- SEO local. Se mudar endereço, telefone ou horários, atualize aqui também. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Recanto da Vovó",
+  "telephone": "+55 19 98933-5142",
+  "servesCuisine": "Comida caseira",
+  "sameAs": ["https://www.instagram.com/recantodavovo2014/"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Estrada Cassucci - Sítio Novo",
+    "addressLocality": "São José do Rio Pardo",
+    "addressRegion": "SP",
+    "postalCode": "13720-000",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Saturday"], "opens": "08:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Thursday","Friday"], "opens": "08:00", "closes": "00:00" }
+  ]
+}
+</script>
+</head>
+<body>
+<!-- Elementos decorativos (folhas e galho), reutilizados com <use>. Só enfeite, sem interação. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="leaf" viewBox="0 0 120 160"><path d="M60 156C20 120 8 70 60 6c52 64 40 114 0 150z" fill="currentColor"/><path d="M60 150V30" stroke="#fff" stroke-opacity=".35" stroke-width="2" fill="none"/></symbol>
+  <symbol id="branch" viewBox="0 0 200 120"><path d="M4 110C60 90 120 60 196 14" stroke="currentColor" fill="none" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="50" cy="86" rx="24" ry="9" transform="rotate(-35 50 86)" fill="currentColor"/><ellipse cx="96" cy="62" rx="24" ry="9" transform="rotate(25 96 62)" fill="currentColor"/>
+    <ellipse cx="140" cy="44" rx="22" ry="8" transform="rotate(-40 140 44)" fill="currentColor"/><ellipse cx="180" cy="26" rx="18" ry="7" transform="rotate(20 180 26)" fill="currentColor"/></symbol>
+</defs></svg>
+<a class="skip" href="#cardapio">Ir para o cardápio</a>
+
+<header class="top" id="top">
+  <a class="brand" href="#inicio" aria-label="Recanto da Vovó, início">Recanto da Vovó</a>
+  <button class="burger" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu"><span></span><span></span></button>
+  <nav id="nav" aria-label="Principal">
+    <a href="#inicio">Início</a>
+    <a href="#recanto">O Recanto</a>
+    <a href="#cardapio" class="nav-cta">Cardápio</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#chegar">Como chegar</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO. TROQUE assets/foto-de-fundo.jpg PELA FOTO REAL -->
+  <section class="hero" id="inicio">
+    <div class="ph hero-bg"><img src="assets/foto-de-fundo.jpg" alt="Vista do Recanto da Vovó em meio à natureza" fetchpriority="high" decoding="async"></div>
+    <div class="hero-in">
+      <p class="status" data-status aria-live="polite"></p>
+      <h1>Recanto da Vovó</h1>
+      <p class="lead">Onde o tempo passa mais devagar.</p>
+      <div class="btns">
+        <a class="btn solid" href="#cardapio">Ver cardápio</a>
+        <a class="btn ghost" data-link="map" target="_blank" rel="noopener">Como chegar</a>
+        <a class="btn ghost" data-link="wa" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec split" id="recanto">
+    <svg class="deco d-branch" aria-hidden="true" viewBox="0 0 200 120"><use href="#branch"/></svg>
+    <figure class="ph frame reveal"><img src="assets/recanto.jpg" alt="O ambiente do Recanto da Vovó" loading="lazy" decoding="async"></figure>
+    <div class="reveal">
+      <h2>Mais que uma refeição.</h2>
+      <p>O Recanto fica no meio do verde, em São José do Rio Pardo. Aqui a comida sai do fogão a lenha, a mesa é de família e ninguém olha o relógio.</p>
+      <p>Bar, restaurante e pesqueiro no mesmo lugar. Almoço em família, mesas ao ar livre, música ao vivo em alguns dias e tempo de sobra para ficar.</p>
+      <ul class="facts" id="facts"></ul>
+      <p>Faixa de preço: <strong id="price"></strong></p>
+    </div>
+  </section>
+
+  <section class="sec dark" id="experiencia">
+    <h2 class="center reveal">Você não visita o Recanto.<br>Você desacelera nele.</h2>
+    <ol class="steps" id="steps"></ol>
+  </section>
+
+  <section class="sec mesa" id="cardapio">
+   <div class="sheet">
+    <h2 class="center reveal placa">Cardápio</h2>
+    <p class="center note">Valores sujeitos a alteração. Confirme pelo WhatsApp.</p>
+    <div class="tabs" id="tabs" role="tablist" aria-label="Categorias do cardápio"></div>
+    <div class="menu" id="menu" role="tabpanel"></div>
+    <p class="center"><a class="btn solid" data-link="wa" target="_blank" rel="noopener">Perguntar no WhatsApp</a></p>
+   </div>
+  </section>
+
+  <section class="feature">
+    <div class="ph feature-bg"><img src="assets/prato-destaque.jpg" alt="Prato da casa do Recanto da Vovó" loading="lazy" decoding="async"></div>
+    <blockquote class="reveal">Tem comida que alimenta.<br>E tem comida que lembra alguém.</blockquote>
+  </section>
+
+  <section class="sec" id="natureza">
+    <svg class="deco d-leaf" aria-hidden="true" viewBox="0 0 120 160"><use href="#leaf"/></svg>
+    <div class="split">
+      <div class="reveal">
+        <h2>Aqui, o almoço vem acompanhado de natureza.</h2>
+        <p>Sombra, passarinho e espaço para as crianças correrem. Escolha uma mesa e fique à vontade.</p>
+      </div>
+      <figure class="ph frame nat reveal"><img src="assets/natureza.jpg" alt="Área verde do Recanto da Vovó" loading="lazy" decoding="async"></figure>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section class="sec dark" id="eventos">
+    <h2 class="center reveal">Tem sempre um motivo para ficar mais um pouco.</h2>
+    <p class="center note">Música ao vivo e eventos. Programação de exemplo, edite em script.js.</p>
+    <ul class="events" id="events"></ul>
+  </section>
+
+  <section class="sec center" id="avaliacoes">
+    <p class="rating"><strong id="rate"></strong> <span id="rate-n"></span></p>
+    <div class="reviews" id="reviews"></div>
+    <p class="more"><a data-link="map" target="_blank" rel="noopener">Ler todas as avaliações no Google</a></p>
+  </section>
+
+  <section class="sec" id="chegar">
+    <h2 class="center reveal">Como chegar</h2>
+    <div class="mapwrap reveal">
+      <!-- MAPA OFICIAL DO GOOGLE. Para trocar, substitua só o src do iframe. -->
+      <div class="mapbox"><iframe title="Mapa: Recanto da Vovó no Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.2728193571575!2d-46.9635314!3d-21.6142902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7cf94e6416403%3A0x9b65f46e9d0d48aa!2sRECANTO%20DA%20VOV%C3%93!5e0!3m2!1spt-BR!2sbr!4v1791142983321!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      <svg class="deco d-branch" aria-hidden="true" viewBox="0 0 200 120"><use href="#branch"/></svg>
+    </div>
+    <div class="split info">
+      <div class="reveal">
+        <p class="status" data-status></p>
+        <address>Estrada Cassucci - Sítio Novo<br>São José do Rio Pardo - SP<br>13720-000</address>
+        <p><a class="phone" data-link="tel"></a></p>
+        <div class="btns">
+          <a class="btn solid" data-link="map" target="_blank" rel="noopener">Como chegar</a>
+          <a class="btn outline" data-link="wa" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <h3>Horários</h3>
+        <table class="hours"><tbody id="hours"></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec insta center">
+    <h2>@recantodavovo2014</h2>
+    <p>Fotos, novidades e a agenda da casa.</p>
+    <a class="btn outline" data-link="ig" target="_blank" rel="noopener">Ver no Instagram</a>
+  </section>
+</main>
+
+<footer>
+  <strong>Recanto da Vovó</strong>
+  <p>São José do Rio Pardo — SP</p>
+  <p><a data-link="tel"></a> · <a data-link="ig" target="_blank" rel="noopener">Instagram</a></p>
+  <p><a href="#cardapio">Cardápio</a> · <a data-link="map" target="_blank" rel="noopener">Como chegar</a> · <a href="#chegar">Horários</a></p>
+</footer>
+
+<!-- Barra fixa do celular -->
+<nav class="bar" aria-label="Ações rápidas">
+  <a href="#cardapio">Cardápio</a>
+  <a data-link="map" target="_blank" rel="noopener">Como chegar</a>
+  <a data-link="wa" target="_blank" rel="noopener">WhatsApp</a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
